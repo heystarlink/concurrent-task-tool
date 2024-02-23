@@ -10,6 +10,7 @@ import java.util.List;
 
 /**
  * 同步步骤执行器
+ * 只有一个线程执行步骤
  * @author : kenny
  * @since : 2024/2/23
  **/

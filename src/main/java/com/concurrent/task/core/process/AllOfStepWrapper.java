@@ -15,6 +15,8 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 
 /**
+ * 同步等待执行器
+ * 步骤下所有的任务执行完毕后才会执行下一个步骤
  * @author : kenny
  * @since : 2024/2/20
  **/
