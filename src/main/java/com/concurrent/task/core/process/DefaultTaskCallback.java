@@ -18,9 +18,8 @@ public class DefaultTaskCallback implements TaskCallback {
 
     @Override
     public void onFailure(TaskContext context, Throwable e) {
-        logger.info(String.format("默认任务回调，任务失败：%s, 任务ID: %s, 失败原因: %s",
+        logger.error(String.format("默认任务回调，任务失败：%s, 任务ID: %s, 失败原因: %s",
                 JSONUtil.toJsonStr(context), context.getTaskId(), e));
-        e.printStackTrace();
     }
 
     @Override

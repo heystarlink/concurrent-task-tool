@@ -1,10 +1,5 @@
 package com.concurrent.task.core;
 
-import com.concurrent.task.core.stepchain.interceptor.Interceptor;
-import com.concurrent.task.core.stepchain.interceptor.InvocationChain;
-import com.concurrent.task.core.stepchain.interceptor.LogStepProcessorInterceptor;
-import com.concurrent.task.core.stepchain.interceptor.LogTaskInterceptor;
-import com.concurrent.task.core.stepchain.interceptor.LogTaskStepInterceptor;
 import com.concurrent.task.core.process.AllOfStepWrapper;
 import com.concurrent.task.core.process.AnyOfStepWrapper;
 import com.concurrent.task.core.process.DefaultTaskCallback;
@@ -12,6 +7,11 @@ import com.concurrent.task.core.process.StepProcessor;
 import com.concurrent.task.core.process.StepWrapper;
 import com.concurrent.task.core.process.SynOfStepWrapper;
 import com.concurrent.task.core.process.TaskCallback;
+import com.concurrent.task.core.stepchain.interceptor.Interceptor;
+import com.concurrent.task.core.stepchain.interceptor.InvocationChain;
+import com.concurrent.task.core.stepchain.interceptor.LogStepProcessorInterceptor;
+import com.concurrent.task.core.stepchain.interceptor.LogTaskInterceptor;
+import com.concurrent.task.core.stepchain.interceptor.LogTaskStepInterceptor;
 import com.concurrent.task.exception.TaskException;
 import com.concurrent.task.metric.TaskExecutorMetric;
 import com.concurrent.task.model.DefaultTaskContext;
@@ -24,10 +24,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author : kenny
